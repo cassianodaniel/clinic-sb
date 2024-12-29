@@ -1,49 +1,48 @@
-import { Button } from "@/components/ui/button"
-import { Calendar, Phone } from 'lucide-react'
-import Image from "next/image"
-
+import { Button } from "@/components/ui/button";
+import FirstHeaderPic from "@/public/sandryenne-1.png";
+import SBClinicLogo from "@/public/sb-clinic-logo.png";
+import { Phone } from 'lucide-react';
+import Image from "next/image";
 export default function SiteHeader() {
   return (
-    <header className="relative min-h-screen w-full overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-gray-800 to-gray-900" />
-
-      <div className="mx-auto flex min-h-screen max-w-7xl flex-row items-stretch px-4 py-6 text-white md:px-6 lg:px-8">
-        {/* Content Side */}
-        <div className="flex max-w-xl flex-col items-start justify-center gap-8 pr-4 md:w-1/2 lg:max-w-2xl">
+    <header className="relative w-full bg-green px-4 py-6 md:px-6 lg:px-8 border-b-2 border-[#f1e2cc]">
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 md:flex-row md:justify-between">
+        <div className="flex flex-col items-center gap-6 md:flex-row md:gap-12">
+          {/* Logo */}
+          <Image
+          src={SBClinicLogo}
+            alt="SB Clinic Logo"
+            width={120}
+            height={120}
+            className="h-auto w-[120px]"
+            priority
+          />
+          
           {/* Title and Buttons */}
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <h1 className="text-3xl font-light tracking-wide animate-fade-in md:text-4xl lg:text-5xl">
-                Dra. Sandryenne Barbosa
+          <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
+            <div className="space-y-1">
+              <h1 className="font-serif text-2xl font-light text-[#a97b41] md:text-3xl lg:text-4xl animate-fade-in">
+                Dra.
               </h1>
-              <p className="text-lg text-white/90 animate-fade-in md:text-xl" style={{ animationDelay: '0.2s' }}>
-                Especialista em Harmonização Orofacial e Implantodontia
-              </p>
+              <h2 className="font-serif text-3xl font-medium text-[#a97b41] md:text-4xl lg:text-5xl animate-fade-in" style={{ animationDelay: '0.2s' }}>
+                Sandryenne Barbosa
+              </h2>
             </div>
             
-            <div className="flex flex-col gap-4 sm:flex-row">
+            <div className="flex flex-col gap-3 sm:flex-row">
               <Button 
-                size="lg"
-                className="group relative overflow-hidden bg-[#a97b41] px-8 text-white hover:bg-[#a97b41] animate-fade-in"
+              disabled={false}
+                className="text-lg text-white btn-hover-effect bg-[#a97b41] px-6 hover:bg-[#a97b41]/90 animate-fade-in cursor-pointer"
                 style={{ animationDelay: '0.4s' }}
               >
-                <span className="relative z-10 flex items-center gap-2">
-                  <Calendar className="h-5 w-5" />
-                  Agende Sua Consulta
-                </span>
-                <div 
-                  className="absolute inset-0 -z-0 translate-x-[-100%] bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-100 transition-transform duration-500 group-hover:translate-x-[100%]"
-                  aria-hidden="true"
-                />
+                Conheça os nossos serviços
               </Button>
               <Button 
-                size="lg"
                 variant="outline" 
-                className="border-2 border-white bg-black/20 text-white backdrop-blur-sm hover:bg-white/20 animate-fade-in"
+                className="text-lg btn-hover-effect border-[#a97b41] text-[#a97b41] hover:bg-[#a97b41]/10 animate-fade-in"
                 style={{ animationDelay: '0.6s' }}
               >
-                <Phone className="mr-2 h-5 w-5" />
+                <Phone className="mr-2 h-4 w-4" />
                 (083) 9 8812 0103
               </Button>
             </div>
@@ -51,27 +50,18 @@ export default function SiteHeader() {
         </div>
 
         {/* Doctor Image */}
-        <div className="relative hidden w-1/2 md:block">
-          <div className="absolute inset-0 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <Image
-              src="/placeholder.svg"
-              alt="Dra. Sandryenne Barbosa"
-              fill
-              className="object-cover object-center"
-              priority
-            />
-          </div>
+        <div className="relative h-[300px] w-full md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px]">
+          <Image
+          src={FirstHeaderPic}
+            alt="Professional Photo"
+            fill
+            className="object-contain"
+            priority
+          />
           <div 
-            className="absolute -bottom-6 -right-6 -left-6 -top-6 -z-10 rounded-2xl border-2 border-[#a97b41]/30 bg-[#a97b41]/10"
+            className="absolute bottom-0 right-0 h-4/5 w-4/5 rounded-tl-full bg-[#f1e2cc]/20 -z-10"
             aria-hidden="true"
           />
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce md:bottom-12">
-          <div className="h-14 w-8 rounded-full border-2 border-white/30 p-2">
-            <div className="h-3 w-full rounded-full bg-white/80" />
-          </div>
         </div>
       </div>
     </header>

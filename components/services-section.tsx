@@ -44,21 +44,21 @@ export default function ServicesSection() {
         {/* Desktop View */}
         <div className="hidden grid-cols-1 gap-6 md:grid md:grid-cols-3">
           {services.map((service, index) => (
-            <Card key={index} className="service-card flex flex-col p-6 shadow-lg animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
+            <Card key={index} className="text-lg service-card flex flex-col p-6 shadow-lg animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#a97b41]">
                 <span className="text-white">{service.icon}</span>
               </div>
-              <h3 className="mb-3 text-2xl font-medium tracking-wide text-[#a97b41]">
+              <h3 className="text-lg mb-3 text-2xl font-medium tracking-wide text-[#a97b41]">
                 {service.title}
               </h3>
-              <p className="mb-6 flex-grow text-base leading-relaxed text-gray-600">
+              <p className="text-lg mb-6 flex-grow text-base leading-relaxed text-gray-600">
                 {service.description}
               </p>
               <Button
                 variant="ghost"
                 className="group w-fit text-[#a97b41] hover:bg-[#a97b41]/10"
               >
-                <span className="font-medium">Saber mais...</span>
+                <span className="text-lg font-medium">Saber mais...</span>
                 <ChevronRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
             </Card>

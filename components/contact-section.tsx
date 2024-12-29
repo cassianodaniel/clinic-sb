@@ -1,11 +1,11 @@
-import { Clock, Mail, MapPin, Phone } from 'lucide-react'
-import Image from "next/image"
-
+import DraSandryenne from "@/public/sandryenne-3.png";
+import { Clock, Mail, MapPin, Phone } from 'lucide-react';
+import Image from "next/image";
 export default function ContactSection() {
   return (
     <section className="w-full bg-[#f1e2cc] px-4 py-16 md:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <h2 className="mb-12  text-2xl font-medium text-[#a97b41] md:text-3xl animate-fade-in">
+        <h2 className="mb-12 text-2xl font-medium text-[#a97b41] md:text-3xl animate-fade-in">
           MAIS INFORMAÇÕES
         </h2>
 
@@ -14,7 +14,7 @@ export default function ContactSection() {
           <div className="flex items-center justify-center">
             <div className="relative h-64 w-64 overflow-hidden rounded-full md:h-80 md:w-80">
               <Image
-                src="/placeholder.svg"
+                src={DraSandryenne}
                 alt="Dra. Sandryenne Barbosa"
                 fill
                 className="object-cover"
@@ -25,7 +25,7 @@ export default function ContactSection() {
           {/* Map */}
           <div className="h-[300px] overflow-hidden rounded-lg md:h-full">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d-35.7031!3d-6.7624!2z!5e0!3m2!1spt-BR!2sbr!4v1640000000000!5m2!1spt-BR!2sbr"
+              src="https://www.google.com/maps?q=Pra%C3%A7a+26+de+Novembro,+128,+Centro,+Sol%C3%A2nea,+Para%C3%ADba,+Brasil&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -40,11 +40,11 @@ export default function ContactSection() {
         {/* Contact Information */}
         <div className="mt-8 rounded-lg bg-white p-6">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            { [
-              {icon: <MapPin className="h-5 w-5 text-white" />, text: ["Praça 26 de Novembro, 128,","Centro, Solânea, Paraíba, Brasil"]},
-              {icon: <Clock className="h-5 w-5 text-white" />, text: ["Segunda à Sexta: 08:00 - 17:00", "Sábado: 09:30 - 13:30"]},
-              {icon: <Mail className="h-5 w-5 text-white" />, text: ["sandryennebarbosa@gmail.com"], link: "mailto:sandryennebarbosa@gmail.com"},
-              {icon: <Phone className="h-5 w-5 text-white" />, text: ["(83) 9 9812 0103"], link: "tel:+5583998120103"}
+            {[
+              { icon: <MapPin className="h-5 w-5 text-white" />, text: ["Praça 26 de Novembro, 128,", "Centro, Solânea, Paraíba, Brasil"] },
+              { icon: <Clock className="h-5 w-5 text-white" />, text: ["Segunda à Sexta: 08:00 - 17:00", "Sábado: 09:30 - 13:30"] },
+              { icon: <Mail className="h-5 w-5 text-white" />, text: ["sandryennebarbosa@gmail.com"], link: "mailto:sandryennebarbosa@gmail.com" },
+              { icon: <Phone className="h-5 w-5 text-white" />, text: ["(83) 9 9812 0103"], link: "tel:+5583998120103" }
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-4 animate-fade-in hover:transform hover:scale-105 transition-all duration-300" style={{ animationDelay: `${index * 0.2}s` }}>
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#a97b41]">
@@ -69,4 +69,3 @@ export default function ContactSection() {
     </section>
   )
 }
-

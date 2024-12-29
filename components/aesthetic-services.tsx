@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
-
+import { Button } from "@/components/ui/button";
+import DraSandryenne from "@/public/sandryenne-2.png";
+import Image from "next/image";
 const services = {
   column1: [
     "Bioestimuladores de Colágeno",
@@ -41,16 +41,16 @@ const services = {
 
 export default function AestheticServices() {
   return (
-    <section className="w-full bg-white px-4 py-16 md:px-6 lg:px-8">
+    <section className="w-full bg-white px-4 py-16 md:px-6 lg:px-8 h-[100vh]">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-8 md:grid-cols-2 md:gap-12">
           {/* Image */}
-          <div className="relative h-[400px] md:h-[600px]">
+          <div className="relative h-auto">
             <Image
-              src="/placeholder.svg"
-              alt="Serviços de Estética"
+              src={DraSandryenne}
+              alt="Dra. Sandryenne Barbosa"
               fill
-              className="rounded-lg object-cover"
+              className="rounded-lg"
               priority
             />
           </div>
@@ -58,7 +58,7 @@ export default function AestheticServices() {
           {/* Content */}
           <div className="flex flex-col">
             <h2 className="mb-8 text-2xl font-medium text-[#a97b41] md:text-3xl lg:text-4xl animate-fade-in">
-              ESTÉTICA FACIAL E CORPORAL AVANÇADA
+              NOSSOS SERVIÇOS
             </h2>
 
             <div className="mb-8 grid gap-x-8 gap-y-2 md:grid-cols-2">
