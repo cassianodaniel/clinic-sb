@@ -1,4 +1,7 @@
+'use client';
+
 import { Button } from "@/components/ui/button";
+import { sendMessageOnWhatsApp } from "@/lib/utils";
 import DraSandryenne from "@/public/sandryenne-2.png";
 import Image from "next/image";
 const services = {
@@ -45,11 +48,10 @@ export default function AestheticServices() {
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-8 md:grid-cols-2 md:gap-12">
           {/* Image */}
-          <div className="relative h-auto">
+          <div className="relative">
             <Image
               src={DraSandryenne}
               alt="Dra. Sandryenne Barbosa"
-              fill
               className="rounded-lg"
               priority
             />
@@ -57,20 +59,21 @@ export default function AestheticServices() {
 
           {/* Content */}
           <div className="flex flex-col">
-            <h2 className="mb-8 text-2xl font-medium text-[#a97b41] md:text-3xl lg:text-4xl animate-fade-in">
-              NOSSOS SERVIÇOS
+            <h2 className="mb-12 text-4xl font-medium leading-tight text-[#a97b41] md:text-4xl lg:text-5xl animate-fade-in">
+              Nossos Serviços
             </h2>
 
             <div className="mb-8 grid gap-x-8 gap-y-2 md:grid-cols-2">
               {/* Column 1 */}
               <ul className="space-y-2">
                 {services.column1.map((service, index) => (
-                  <li 
+                  <li
                     key={index}
-                    className="flex items-center text-sm text-gray-700 md:text-base animate-fade-in hover:text-[#a97b41] transition-colors duration-300"
+                    className="cursor-pointer flex items-center text-2xl text-gray-700 animate-fade-in hover:text-[#a97b41] transition-colors duration-300"
                     style={{ animationDelay: `${index * 0.1}s` }}
+                    onClick={() => sendMessageOnWhatsApp("Olá! Gostaria de saber mais sobre o serviço: " + service)}
                   >
-                    <div className="mr-2 h-1.5 w-1.5 rounded-full bg-[#a97b41]" />
+                    <div className="cursor-pointer mr-2 h-1.5 w-1.5 rounded-full bg-[#a97b41]" />
                     {service}
                   </li>
                 ))}
@@ -81,18 +84,19 @@ export default function AestheticServices() {
                 {services.column2.map((service, index) => (
                   <li
                     key={index}
-                    className="flex items-center text-sm text-gray-700 md:text-base animate-fade-in hover:text-[#a97b41] transition-colors duration-300"
+                    className="cursor-pointer flex items-center text-2xl text-gray-700 animate-fade-in hover:text-[#a97b41] transition-colors duration-300"
                     style={{ animationDelay: `${index * 0.1}s` }}
+                    onClick={() => sendMessageOnWhatsApp("Olá! Gostaria de saber mais sobre o serviço: " + service)}
                   >
-                    <div className="mr-2 h-1.5 w-1.5 rounded-full bg-[#a97b41]" />
+                    <div className="cursor-pointer mr-2 h-1.5 w-1.5 rounded-full bg-[#a97b41]" />
                     {service}
                   </li>
                 ))}
               </ul>
             </div>
-
-            <Button 
-              className="w-full bg-[#a97b41] text-white hover:bg-[#a97b41]/90 md:w-auto"
+            <Button
+              onClick={() => sendMessageOnWhatsApp()}
+              className="w-full bg-[#a97b41] text-white hover:bg-[#a97b41]/90 md:w-auto text-2xl h-12"
             >
               Clique para saber mais
             </Button>
