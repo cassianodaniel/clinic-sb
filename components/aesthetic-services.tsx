@@ -41,7 +41,7 @@ const services = {
 
 export default function AestheticServices() {
   return (
-    <section className="w-full bg-white px-4 py-16 md:px-6 lg:px-8 h-[100vh]">
+    <section className="w-full bg-white px-4 py-16 md:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-8 md:grid-cols-2 md:gap-12">
           {/* Image */}
