@@ -54,10 +54,10 @@ export default function Footer() {
                   <p className="text-2xl font-medium text-[#a97b41]">E-mail</p>
                 </div>
                 <Link
-                  href="mailto:sandryennebarbosa@gmail.com"
+                  href="mailto:sandra_ryanne@hotmail.com"
                   className="text-bold text-sm md:text-xl text-[#7C5835] hover:text-[#a97b41] transition-colors"
                 >
-                  sandryennebarbosa@gmail.com
+                  sandra_ryanne@hotmail.com
                 </Link>
               </div>
             </div>
