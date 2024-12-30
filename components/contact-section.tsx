@@ -40,8 +40,8 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-sm md:text-xl text-[#7C5835]">
-                    Segunda à Sexta: 08:00 - 17:00<br />
-                    Sábado: 09:30 - 13:30
+                    Segunda à Sexta: 09:00 - 19:00<br />
+                    Sábado: 09:00 - 12:00
                   </p>
                 </div>
               </div>

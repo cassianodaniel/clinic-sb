@@ -20,7 +20,6 @@ const services = {
     "Preenchimentos Faciais",
     "Skinbooster",
     "Ultrassom Microfocado",
-    "Depilação a Laser",
     "Rejuvenescimento Íntimo",
     "Glúteo Max"
   ],
