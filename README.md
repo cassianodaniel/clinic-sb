@@ -2,6 +2,12 @@
 
 A modern and responsive landing page for a dentist's practice, built with React and styled using Tailwind CSS. This project aims to create a professional online presence for the dentist, highlighting services, patient testimonials, and contact information, while offering an intuitive and user-friendly experience.
 
+# Live demo
+
+https://clinica-sb.vercel.app/
+
+# Screenshots
+
 ![image](https://github.com/user-attachments/assets/dec35c95-2c2c-407e-9235-be53bac76bdb)
 ![image](https://github.com/user-attachments/assets/6edf1cfa-025f-4053-8ff5-7b125ebf28b2)
 ![image](https://github.com/user-attachments/assets/389233e3-2f83-42cf-976d-77233792e3e9)
