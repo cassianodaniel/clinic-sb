@@ -11,18 +11,18 @@ export default function ServicesSection() {
 
   const services = [
     {
-      title: "Restauração Dentária",
-      description: "A Dra. Sandryenne oferece serviços de restauração dentária para recuperar seu sorriso.",
+      title: "Estética Facial e Corporal",
+      description: "Serviços voltados para cuidados com a pele.",
       icon: <Tooth className="h-6 w-6" />
     },
     {
-      title: "Harmonização Facial",
-      description: "Procedimentos de harmonização facial para realçar a sua beleza.",
+      title: "Harmonização e Embelezamento",
+      description: "Inclui serviços que focam na estética do rosto e corpo.",
       icon: <Tooth className="h-6 w-6" />
     },
     {
-      title: "Implantes Dentários",
-      description: "Implantes dentários modernos para devolver a funcionalidade do seu sorriso.",
+      title: "Tratamentos Avançados e Terapias Estéticas",
+      description: "Abrange procedimentos mais especializados.",
       icon: <Tooth className="h-6 w-6" />
     }
   ]
@@ -40,7 +40,7 @@ export default function ServicesSection() {
       <div className="mx-auto max-w-7xl">
 
         <h2 className="mb-12 text-4xl font-medium leading-tight text-[#a97b41] md:text-4xl lg:text-5xl animate-fade-in">
-          Odontologia Especializada
+          Especialidades
         </h2>
 
         {/* Desktop View */}
