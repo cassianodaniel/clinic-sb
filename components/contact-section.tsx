@@ -72,7 +72,7 @@ export default function Footer() {
                   href="tel:+5583998120103"
                   className="text-sm md:text-xl text-[#7C5835] hover:text-[#a97b41] transition-colors"
                 >
-                  (83) 9 9812 0103
+                  (83) 99812-0103
                 </Link>
               </div>
             </div>
