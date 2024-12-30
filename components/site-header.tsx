@@ -6,6 +6,7 @@ import FirstHeaderPic from "@/public/sandryenne-1.png";
 import SBClinicLogo from "@/public/sb-clinic-logo.png";
 import { Phone } from 'lucide-react';
 import Image from "next/image";
+import { WhatsAppSvg } from "./ui/wpp";
 export default function SiteHeader() {
   return (
     <header className="relative w-full bg-green px-4 pt-6 md:px-6 lg:px-8 border-[#f1e2cc] shadow-md shadow-[#a97a4113]">
@@ -37,6 +38,7 @@ export default function SiteHeader() {
                 style={{ animationDelay: '0.4s' }}
                 onClick={() => sendMessageOnWhatsApp()}
               >
+                <WhatsAppSvg/>
                 Conheça os nossos serviços
               </Button>
               <Button

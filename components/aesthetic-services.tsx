@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { sendMessageOnWhatsApp } from "@/lib/utils";
 import DraSandryenne from "@/public/sandryenne-2.png";
 import Image from "next/image";
+import { WhatsAppSvg } from "./ui/wpp";
 const services = {
   column1: [
     "Bioestimuladores de Colágeno",
@@ -98,6 +99,7 @@ export default function AestheticServices() {
               onClick={() => sendMessageOnWhatsApp()}
               className="w-full bg-[#a97b41] text-white hover:bg-[#a97b41]/90 md:w-auto text-2xl h-10"
             >
+              <WhatsAppSvg />
               Clique para saber mais
             </Button>
           </div>

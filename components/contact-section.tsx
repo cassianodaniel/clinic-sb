@@ -24,7 +24,7 @@ export default function Footer() {
                   <p className="text-2xl font-medium text-[#a97b41]">Endereço</p>
                 </div>
                 <div>
-                  <p className="text-xl text-[#7C5835]">
+                  <p className="text-sm md:text-xl text-[#7C5835]">
                     Praça 26 de Novembro, 128,<br />
                     Centro, Solânea, Paraíba, Brasil
                   </p>
@@ -39,7 +39,7 @@ export default function Footer() {
                   <p className="text-2xl font-medium text-[#a97b41]">Horário de Atendimento</p>
                 </div>
                 <div>
-                  <p className="text-xl text-[#7C5835]">
+                  <p className="text-sm md:text-xl text-[#7C5835]">
                     Segunda à Sexta: 08:00 - 17:00<br />
                     Sábado: 09:30 - 13:30
                   </p>
@@ -55,7 +55,7 @@ export default function Footer() {
                 </div>
                 <Link
                   href="mailto:sandryennebarbosa@gmail.com"
-                  className="text-bold text-xl text-[#7C5835] hover:text-[#a97b41] transition-colors"
+                  className="text-bold text-sm md:text-xl text-[#7C5835] hover:text-[#a97b41] transition-colors"
                 >
                   sandryennebarbosa@gmail.com
                 </Link>
@@ -70,7 +70,7 @@ export default function Footer() {
                 </div>
                 <Link
                   href="tel:+5583998120103"
-                  className="text-xl text-[#7C5835] hover:text-[#a97b41] transition-colors"
+                  className="text-sm md:text-xl text-[#7C5835] hover:text-[#a97b41] transition-colors"
                 >
                   (83) 9 9812 0103
                 </Link>

@@ -58,7 +58,8 @@ export default function ServicesSection() {
                 variant="ghost"
                 className="group w-fit text-[#a97b41] bg-[#a97b41]/10"
               >
-                <span className="text-xl font-medium">Saber mais...</span>
+                <span className="text-xl font-medium">
+                  Saber mais...</span>
                 <ChevronRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
             </Card>
