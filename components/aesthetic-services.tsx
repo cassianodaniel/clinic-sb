@@ -60,7 +60,7 @@ export default function AestheticServices() {
 
           {/* Content */}
           <div className="flex flex-col">
-            <h2 className="mb-12 text-4xl font-medium leading-tight text-[#a97b41] md:text-4xl lg:text-5xl animate-fade-in">
+            <h2 className="mb-12 text-4xl font-medium leading-tight text-[#a97b41] md:text-4xl lg:text-5xl animate-fade-in ">
               Nossos Serviços
             </h2>
 
@@ -70,7 +70,7 @@ export default function AestheticServices() {
                 {services.column1.map((service, index) => (
                   <li
                     key={index}
-                    className="cursor-pointer flex items-center text-xl sm:text-2xl text-gray-700 animate-fade-in hover:text-[#a97b41] transition-colors duration-300"
+                    className="cursor-pointer flex items-center text-lg md:text-2xl text-gray-700 animate-fade-in hover:text-[#a97b41] transition-colors duration-300"
                     style={{ animationDelay: `${index * 0.1}s` }}
                     onClick={() => sendMessageOnWhatsApp("Olá! Gostaria de saber mais sobre o serviço: " + service)}
                   >
@@ -85,7 +85,7 @@ export default function AestheticServices() {
                 {services.column2.map((service, index) => (
                   <li
                     key={index}
-                    className="cursor-pointer flex items-center text-xl sm:text-2xl text-gray-700 animate-fade-in hover:text-[#a97b41] transition-colors duration-300"
+                    className="cursor-pointer flex items-center text-lg md:text-2xl text-gray-700 animate-fade-in hover:text-[#a97b41] transition-colors duration-300"
                     style={{ animationDelay: `${index * 0.1}s` }}
                     onClick={() => sendMessageOnWhatsApp("Olá! Gostaria de saber mais sobre o serviço: " + service)}
                   >
