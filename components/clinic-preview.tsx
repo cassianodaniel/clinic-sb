@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { sendMessageOnWhatsApp } from "@/lib/utils";
 import Sandryenne from "@/public/sandryenne-3.png";
 import Image from "next/image";
+import { WhatsAppSvg } from "./ui/wpp";
 export default function ClinicPreview() {
   return (
     <section className="w-full bg-white px-4 py-24 md:px-6 lg:px-8">
@@ -12,12 +13,16 @@ export default function ClinicPreview() {
           {/* Text Content */}
           <div className="space-y-8">
             <div className="space-y-8">
-              <div className="flex justify-center">
+              <div className="
+              hidden lg:flex
+               justify-center">
                 <Image
                   src={Sandryenne}
                   alt="Clinic"
                   height={300}
-                  className="rounded-lg mb-4"
+                  className="
+                  hidden lg:block
+                  rounded-lg mb-4"
                 />
                 <br />
                 <br />
@@ -28,20 +33,22 @@ export default function ClinicPreview() {
               </h2>
               <ul className="text-2xl leading-relaxed text-gray-600 animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 <li
-                  className="text-justify"
+                  className="p-4 md:p-0"
                 >Cuidados completos para um sorriso saudável e harmonioso, combinando técnicas de ponta com um atendimento personalizado e tratamentos estéticos inovadores para realçar sua beleza natural, com resultados visíveis e duradouros.</li>
               </ul>
             </div>
             <div className="flex justify-center">
               <Button
                 size="lg"
-                className="group relative overflow-hidden bg-[#a97b41] px-8 h-12 text-white hover:bg-[#a97b41]/90 animate-fade-in"
+                className="group relative overflow-hidden bg-[#a97b41] px-8 h-10 text-white hover:bg-[#a97b41]/90 animate-fade-in"
                 style={{ animationDelay: '0.6s' }}
                 onClick={() => sendMessageOnWhatsApp()}
               >
-                <span className="text-2xl relative z-10">
-                  Falar com a Dra. Sandryenne
+                <span className="text-2xl relative z-10 flex items-center text-white">
+                  <WhatsAppSvg />
+                  Falar com Dra. Sandryenne
                 </span>
+
                 <div className="absolute inset-0 -z-0 bg-gradient-to-r from-[#a97b41]/0 via-white/20 to-[#a97b41]/0 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
               </Button>
             </div>

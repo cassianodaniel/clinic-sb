@@ -84,7 +84,7 @@ export default function AestheticServices() {
                 {services.column2.map((service, index) => (
                   <li
                     key={index}
-                    className="cursor-pointer flex items-center text-2xl text-gray-700 animate-fade-in hover:text-[#a97b41] transition-colors duration-300"
+                    className="cursor-pointer flex items-center text-xl sm:text-2xl text-gray-700 animate-fade-in hover:text-[#a97b41] transition-colors duration-300"
                     style={{ animationDelay: `${index * 0.1}s` }}
                     onClick={() => sendMessageOnWhatsApp("Olá! Gostaria de saber mais sobre o serviço: " + service)}
                   >
@@ -96,7 +96,7 @@ export default function AestheticServices() {
             </div>
             <Button
               onClick={() => sendMessageOnWhatsApp()}
-              className="w-full bg-[#a97b41] text-white hover:bg-[#a97b41]/90 md:w-auto text-2xl h-12"
+              className="w-full bg-[#a97b41] text-white hover:bg-[#a97b41]/90 md:w-auto text-2xl h-10"
             >
               Clique para saber mais
             </Button>

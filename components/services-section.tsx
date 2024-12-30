@@ -56,7 +56,7 @@ export default function ServicesSection() {
               <Button
                 onClick={() => sendMessageOnWhatsApp()}
                 variant="ghost"
-                className="group w-fit text-[#a97b41] bg-[#a97b41]/10"
+                className="group w-fit text-[#a97b41] hover:bg-[#a97b41]/10"
               >
                 <span className="text-2xl font-medium">Saber mais...</span>
                 <ChevronRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -68,11 +68,6 @@ export default function ServicesSection() {
         {/* Mobile Carousel */}
         <div className="relative md:hidden">
           <Card className="flex flex-col p-6 shadow-lg">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#a97b41]">
-              <span className="text-white">
-                {services[currentSlide].icon}
-              </span>
-            </div>
             <h3 className="mb-3 text-2xl font-medium tracking-wide text-[#a97b41]">
               {services[currentSlide].title}
             </h3>
@@ -104,14 +99,14 @@ export default function ServicesSection() {
           {/* Navigation Buttons */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 rounded-full bg-white p-2 shadow-lg"
+            className="absolute left-0 top-2/2 -translate-y-1/2 rounded-full bg-white p-2 shadow-lg"
             aria-label="Previous slide"
           >
             <ChevronLeft className="h-6 w-6 text-[#a97b41]" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full bg-white p-2 shadow-lg"
+            className="absolute right-0 top-2/2 -translate-y-1/2 rounded-full bg-white p-2 shadow-lg"
             aria-label="Next slide"
           >
             <ChevronRight className="h-6 w-6 text-[#a97b41]" />

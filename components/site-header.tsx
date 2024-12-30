@@ -33,7 +33,7 @@ export default function SiteHeader() {
             <div className="flex flex-col gap-3">
               <Button
                 disabled={false}
-                className="text-2xl text-white btn-hover-effect bg-[#a97b41] px-8 hover:bg-[#a97b41]/90 animate-fade-in cursor-pointer h-12"
+                className="text-2xl text-white btn-hover-effect bg-[#a97b41] px-8 hover:bg-[#a97b41]/90 animate-fade-in cursor-pointer h-10"
                 style={{ animationDelay: '0.4s' }}
                 onClick={() => sendMessageOnWhatsApp()}
               >
@@ -41,7 +41,7 @@ export default function SiteHeader() {
               </Button>
               <Button
                 variant="outline"
-                className="text-2xl btn-hover-effect border-[#a97b41] text-[#a97b41] hover:bg-[#a97b41]/10 animate-fade-in h-12"
+                className="text-2xl btn-hover-effect border-[#a97b41] text-[#a97b41] hover:bg-[#a97b41]/10 animate-fade-in h-10"
                 style={{ animationDelay: '0.6s' }}
                 onClick={() => callPhoneNumber()}
               >
@@ -60,7 +60,7 @@ export default function SiteHeader() {
           priority
         />
         <div
-          className="absolute bottom-0 right-0 h-4/5 w-[100vw] rounded-tl-full bg-[#f1e2cc]/20 -z-10"
+          className="absolute bottom-0 right-0 h-4/5 w-[100vw] rounded-tl-full bg-[#f1ddc0]/20 -z-10"
           aria-hidden="true"
         />
       </div>
