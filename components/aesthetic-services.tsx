@@ -21,7 +21,8 @@ const services = {
     "Skinbooster",
     "Ultrassom Microfocado",
     "Rejuvenescimento Íntimo",
-    "Glúteo Max"
+    "Glúteo Max",
+    "Tratamento de Celulite"
   ],
   column2: [
     "Lipo Enzimática",
@@ -38,7 +39,6 @@ const services = {
     "Revitalização Facial",
     "Massoterapia",
     "Tratamento de Estrias",
-    "Tratamento de Celulite"
   ]
 }
 
