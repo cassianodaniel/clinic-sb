@@ -54,7 +54,7 @@ export default function ServicesSection() {
                 {service.description}
               </p>
               <Button
-                onClick={sendMessageOnWhatsApp}
+                onClick={() => sendMessageOnWhatsApp()}
                 variant="ghost"
                 className="group w-fit text-[#a97b41] bg-[#a97b41]/10"
               >
