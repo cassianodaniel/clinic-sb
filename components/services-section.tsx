@@ -11,17 +11,17 @@ export default function ServicesSection() {
 
   const services = [
     {
-      title: "Estética Facial e Corporal",
+      title: "Estética",
       description: "Serviços voltados para cuidados com a pele.",
       icon: <Tooth className="h-6 w-6" />
     },
     {
-      title: "Harmonização e Embelezamento",
+      title: "Harmonização",
       description: "Inclui serviços que focam na estética do rosto e corpo.",
       icon: <Tooth className="h-6 w-6" />
     },
     {
-      title: "Tratamentos Avançados e Terapias Estéticas",
+      title: "Tratamentos",
       description: "Abrange procedimentos mais especializados.",
       icon: <Tooth className="h-6 w-6" />
     }
@@ -39,7 +39,7 @@ export default function ServicesSection() {
     <section className="w-full bg-[#f1e2cc] px-4 py-16 md:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
 
-        <h2 className="mb-12 text-4xl font-medium leading-tight text-[#a97b41] md:text-4xl lg:text-5xl animate-fade-in">
+        <h2 className="mb-8 text-4xl font-medium leading-tight text-[#a97b41] md:text-4xl lg:text-5xl animate-fade-in">
           Especialidades
         </h2>
 
@@ -56,9 +56,9 @@ export default function ServicesSection() {
               <Button
                 onClick={() => sendMessageOnWhatsApp()}
                 variant="ghost"
-                className="group w-fit text-[#a97b41] hover:bg-[#a97b41]/10"
+                className="group w-fit text-[#a97b41] bg-[#a97b41]/10"
               >
-                <span className="text-2xl font-medium">Saber mais...</span>
+                <span className="text-xl font-medium">Saber mais...</span>
                 <ChevronRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
             </Card>
@@ -76,9 +76,9 @@ export default function ServicesSection() {
             </p>
             <Button
               variant="ghost"
-              className="group w-fit text-[#a97b41] hover:bg-[#a97b41]/10"
+              className="group w-fit text-[#a97b41] bg-[#a97b41]/10"
             >
-              <span className="font-medium text-2xl">Saber mais...</span>
+              <span className="font-medium text-xl">Saber mais...</span>
               <ChevronRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Button>
           </Card>
